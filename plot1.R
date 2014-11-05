@@ -6,3 +6,6 @@ data.power$DT = as.POSIXct(strptime(paste(data.power$Date, data.power$Time), "%Y
 
 hist(data.power$Global_active_power, col='red', main="Global Active Power", 
      xlab="Global Active Power (Kilowwatts")
+
+dev.copy(png, file ="plot1.png") 
+dev.off()

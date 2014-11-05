@@ -13,7 +13,7 @@ plot(data.power$Voltage ~ data.power$DT, type="l", ylab="Voltage (volt) ", xlab=
 plot(data.power$Sub_metering_1 ~ data.power$DT, type="l", ylab="Energy Sub Metering", xlab="", col="black")
 lines(data.power$Sub_metering_2 ~ data.power$DT, col="Red")
 lines(data.power$Sub_metering_3 ~ data.power$DT, col="Blue")
-legend("topright", col=c("black", "red", "blue"), lty=1, lwd=2, legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), box.lwd=0)
+legend("topright", col=c("black", "red", "blue"), lty=1, lwd=2, legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), bty="n")
 
 plot(data.power$Global_reactive_power ~ data.power$DT, type="l", ylab="Global Reactive Power (kilowatts) ", xlab="")
 
